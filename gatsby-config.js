@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Sydney Ecommerce Theme`,
-    siteUrl: `https://jamm.matter.design`,
+    title: `BROKE SAINTS — Luxury Streetwear From Nothing`,
+    siteUrl: `https://brokesaints.netlify.app`,
   },
   plugins: [],
 };

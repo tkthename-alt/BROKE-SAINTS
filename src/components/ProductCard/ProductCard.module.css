@@ -21,7 +21,7 @@
 .productName {
     font-size: 14px;
     line-height: 17px;
-    color: var(--standard-black);
+    color: var(--standard-white);
 }
 
 .prices {
@@ -34,6 +34,7 @@
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
+    color: var(--standard-white);
 }
 
 .salePrice {
@@ -62,7 +63,7 @@
 
     width: 70px;
     height: 70px;
-    background-color: var(--standard-white);
+    background-color: var(--standard-black);
 
     display: flex;
     align-items: center;
