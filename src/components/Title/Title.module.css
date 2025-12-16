@@ -12,6 +12,7 @@
     font-weight: normal;
     font-size: 42px;
     line-height: 50px;
+    color: var(--standard-white);
 }
 
 .subtitle {
@@ -19,13 +20,15 @@
     font-size: 16px;
     line-height: 19px;
     margin-top: 8px;
+    color: var(--standard-white);
+    opacity: 0.8;
 }
 
 .link {
     margin-top: 8px;
-    color: var(--standard-black);
+    color: var(--standard-white);
     text-transform: uppercase;
-    border-bottom: 1px solid var(--standard-black);
+    border-bottom: 1px solid var(--standard-white);
     transition: all ease-in-out 0.3s;
 
     font-weight: 500;

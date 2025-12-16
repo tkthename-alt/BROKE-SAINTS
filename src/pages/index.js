@@ -29,30 +29,26 @@ const IndexPage = () => {
     <Layout disablePaddingBottom>
       {/* Hero Container */}
       <Hero
-        maxWidth={'500px'}
+        maxWidth={'680px'}
         image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
+        title={'MADE FROM NOTHING'}
+        subtitle={'Luxury streetwear born from struggle, faith, and ambition. BROKE SAINTS is for those who started with nothing and refused to stay there.'}
+        ctaText={'shop the drop'}
         ctaAction={goToShop}
       />
 
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
-        </p>
-        <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
+          Limited drops. No mass production.{' '}
+          <span className={styles.gold}>Every piece intentional.</span>
         </p>
       </div>
 
       {/* Collection Container */}
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
-          <Title name={'New Collection'} />
+          <Title name={'THE SAINTS DROP'} />
           <ProductCollectionGrid />
         </Container>
       </div>
@@ -79,8 +75,8 @@ const IndexPage = () => {
             altImage={'highlight image'}
             miniImage={'/highlightmin.png'}
             miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
+            title={'Saints Heavyweight Hoodie'}
+            description={`Premium heavyweight cotton. Oversized fit. Made for those who earned their place. Limited quantities available.`}
             textLink={'shop now'}
             link={'/shop'}
           />
@@ -89,49 +85,60 @@ const IndexPage = () => {
 
       {/* Promotion */}
       <div className={styles.promotionContainer}>
-        <Hero image={toOptimizedImage('/banner2.png')} title={`-50% off \n All Essentials`} />
+        <Hero image={toOptimizedImage('/banner2.png')} title={`THE DROP \n IS LIVE`} />
         <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
+          <Link to={'/shop'}>HOODIES</Link>
+          <Link to={'/shop'}>TEES</Link>
         </div>
       </div>
 
-      {/* Quote */}
+      {/* Quote - Our Code */}
       <Quote
-        bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        bgColor={'#111111'}
+        title={'THE GOSPEL'}
         quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
+          '"BROKE SAINTS is not just a brand — it\'s a testimony. Built for the ones who had vision before resources. We blend street discipline with luxury standards, faith with rebellion, hunger with purpose."'
         }
       />
+
+      {/* Values Grid */}
+      <div className={styles.valuesContainer}>
+        <Container size={'large'}>
+          <Title name={'OUR CODE'} />
+          <div className={styles.valuesGrid}>
+            <div className={styles.valueCard}>
+              <h4>FROM NOTHING</h4>
+              <p>We honor beginnings. Scarcity breeds greatness.</p>
+            </div>
+            <div className={styles.valueCard}>
+              <h4>LIMITED</h4>
+              <p>No mass production. Every drop is intentional.</p>
+            </div>
+            <div className={styles.valueCard}>
+              <h4>DISCIPLINE</h4>
+              <p>Luxury is earned through consistency.</p>
+            </div>
+            <div className={styles.valueCard}>
+              <h4>FAITH & FIRE</h4>
+              <p>Belief fuels rebellion.</p>
+            </div>
+          </div>
+        </Container>
+      </div>
 
       {/* Blog Grid */}
       <div className={styles.blogsContainer}>
         <Container size={'large'}>
-          <Title name={'Journal'} subtitle={'Notes on life and style'} />
+          <Title name={'Lookbook'} subtitle={'Saints in the wild'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.sustainableContainer}>
-        <Hero
-          image={toOptimizedImage('/banner3.png')}
-          title={'We are Sustainable'}
-          subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
-          }
-          ctaText={'read more'}
-          maxWidth={'660px'}
-          ctaStyle={styles.ctaCustomButton}
-        />
       </div>
 
       {/* Social Media */}
       <div className={styles.socialContainer}>
         <Title
           name={'Styled by You'}
-          subtitle={'Tag @sydney to be featured.'}
+          subtitle={'Tag @brokesaints to be featured.'}
         />
         <div className={styles.socialContentGrid}>
           <img src={toOptimizedImage(`/social/socialMedia1.png`)} alt={'social media 1'} />

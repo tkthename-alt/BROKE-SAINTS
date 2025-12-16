@@ -28,6 +28,8 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+    color: var(--standard-white);
+    opacity: 0.8;
 }
 
 .gold {
@@ -100,6 +102,38 @@
     object-fit: cover;
 }
 
+/* Values Section */
+.valuesContainer {
+    margin-top: 96px;
+    padding: 60px 0;
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.valueCard {
+    background: #111111;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.valueCard h4 {
+    margin-bottom: 12px;
+    font-family: var(--standard-font);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.valueCard p {
+    opacity: 0.7;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 @media (max-width: 800px) {
     .sustainableContainer {
         margin: 96px 0px 0px 0px;
@@ -111,5 +145,16 @@
 
     .highlightContainer {
         margin: 88px 0px 40px 0px;
+    }
+
+    .valuesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .valuesGrid {
+        grid-template-columns: 1fr;
     }
 }

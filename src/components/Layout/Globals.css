@@ -27,28 +27,28 @@
   --small: 600px;
   --medium: 1000px;
   --large: 1300px;
-  --standard-header: 'Inria Serif', serif;
+  --standard-header: 'Inter', sans-serif;
   --standard-font: 'Inter', sans-serif;
-  --brand-font: 'Yeseva One', cursive;
-  --standard-black: #000000;
-  --standard-white: #ffffff;
-  --standard-grey: #e2e2e2;
-  --standard-dark-grey: #545250;
-  --standard-light-grey: #FCFAF6;
-  --grey-passthough: #979797;
-  --grey-border: #A9A9A8;
-  --grey-placeholder: #716868;
-  --grey-crumb: #53524E;
-  --grey-disabled: #F2F2F2;
-  --grey-chip: #F1F1F1;
-  --grey-one: #D8D8D8;
-  --bg-grey: #F7F7F7;
-  --bg-dark: #383634;
-  --bg-close-icon: #E9E7E3;
-  --bg-light-gray: #e5e5e5;
+  --brand-font: 'Inter', sans-serif;
+  --standard-black: #0b0b0b;
+  --standard-white: #f5f5f5;
+  --standard-grey: #333333;
+  --standard-dark-grey: #1a1a1a;
+  --standard-light-grey: #111111;
+  --grey-passthough: #666666;
+  --grey-border: #333333;
+  --grey-placeholder: #888888;
+  --grey-crumb: #999999;
+  --grey-disabled: #222222;
+  --grey-chip: #1a1a1a;
+  --grey-one: #333333;
+  --bg-grey: #0f0f0f;
+  --bg-dark: #0b0b0b;
+  --bg-close-icon: #1a1a1a;
+  --bg-light-gray: #222222;
   --standard-gold: #B59F66;
-  --sale: #902F15;
-  --error: #9A3515;
+  --sale: #cc4444;
+  --error: #cc4444;
 
   /* not sure if we are to maintain existing color palletes. better if we keep it lightweight? */
   /* --standard-grey-darker: #393939;
@@ -89,7 +89,8 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   font-family: var(--standard-font);
-  color: var(--standard-black);
+  background-color: var(--standard-black);
+  color: var(--standard-white);
   font-size: 16px; /* BASE FONT SIZE */
   line-height: 1.5em;
   font-weight: 400;
@@ -270,7 +271,7 @@ input:focus {
 
 a {
   text-decoration: none;
-  color: var(--standard-black);
+  color: var(--standard-white);
   transition: all ease-in-out 0.3s;
 }
 

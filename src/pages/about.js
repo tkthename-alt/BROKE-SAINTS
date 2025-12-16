@@ -28,98 +28,85 @@ const AboutPage = (props) => {
         <Hero
           maxWidth={'900px'}
           image={'/about.png'}
-          title={`Sydney \n A British brand since 1860`}
+          title={`BROKE SAINTS \n Made From Nothing`}
         />
 
         <div className={styles.navContainer}>
           <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>
-            History
+            The Gospel
           </ThemeLink>
           <ThemeLink onClick={() => handleScroll(valuesRef)} to={'#values'}>
-            Values
+            Our Code
           </ThemeLink>
           <ThemeLink
             onClick={() => handleScroll(sustainabilityRef)}
             to={'#sustainability'}
           >
-            Sustainability
+            The Mission
           </ThemeLink>
         </div>
 
         <Container size={'large'} spacing={'min'}>
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
-              Founded in 1860, Sydney is an innovative British brand with a
-              contemporary edge. We make timeless everyday luxury clothing.
+              BROKE SAINTS is not just a brand — it's a testimony. Built for the ones
+              who had vision before resources, who turned nothing into something through
+              pure determination and faith.
             </p>
             <br />
             <br />
             <p>
-              We created some of the world's first T-shirts and spent decades
-              perfecting the feel of the cotton. Today we are the only brand
-              that makes T-shirts in its own factory in the UK. And we do this
-              in the same factory we have occupied since 1937.
+              We blend street discipline with luxury standards. Every stitch carries the
+              weight of our story — the late nights, the setbacks, the moments when giving
+              up seemed easier. But saints don't quit. We kept building when nobody was watching.
             </p>
           </div>
         </Container>
 
         <div className={styles.imageContainer}>
-          <img alt={'shirt brand'} src={toOptimizedImage('/about1.png')}></img>
+          <img alt={'BROKE SAINTS apparel'} src={toOptimizedImage('/about1.png')}></img>
         </div>
 
         <Container size={'large'} spacing={'min'}>
           <div className={styles.content}>
-            <h3>Our Values</h3>
+            <h3>Our Code</h3>
             <div ref={valuesRef}>
               <p>
-                Sunspel produced some of the world's earliest T-shirts. In the
-                late 1800s the business made luxury tunics and undershirts from
-                lightweight Sea Island cotton for export to the Far East and
-                other warm climates. While these garments initially had silk
-                buttoned plackets, these were removed in the early 1900s and
-                replaced with simple bound necks to reduce manufacturing costs -
-                creating the T-shirt. We've supplied the world as the T-shirt
-                has evolved from underwear to outerwear, from symbol of youthful
-                rebellion to everyday wardrobe staple, and we've spent decades
-                refining its every last aspect.
+                Every piece we create represents growth through struggle. We don't chase trends —
+                we set standards. Our heavyweight fabrics, oversized fits, and intentional designs
+                speak to those who understand that luxury is earned, not given.
               </p>
               <ol>
-                <li>Be an ecowear</li>
-                <li>Sophisticated and not mass-produced</li>
-                <li>Only natural materials</li>
+                <li>From Nothing — We honor beginnings. Scarcity breeds greatness.</li>
+                <li>Limited — No mass production. Every drop is intentional.</li>
+                <li>Discipline — Luxury is earned through consistency.</li>
+                <li>Faith & Fire — Belief fuels rebellion.</li>
               </ol>
-              <img alt={'founder'} src={toOptimizedImage('/about2.png')}></img>
+              <img alt={'BROKE SAINTS collection'} src={toOptimizedImage('/about2.png')}></img>
             </div>
-            <h3>Sustainability</h3>
+            <h3>The Mission</h3>
             <div id={'#sustainability'} ref={sustainabilityRef}>
               <p>
-                Our founder, Thomas Hill, had both an eye for quality and a
-                desire to innovate. As well as using the finest fibres such as
-                Sea Island cotton, cashmere and silk, he invented his own
-                fabrics. Sunspel continues this commitment to innovation today
-                and our unique fabrics include: Q100 Sea Island cotton, Q82
-                Supima cotton, Q75 warp knit mesh cotton and Q14 warp knit
-                cellular cotton. The technology behind these fabrics remains
-                unchanged today and all Sunspel products use the finest cottons,
-                wools and fibres.
+                BROKE SAINTS exists to prove that where you start doesn't determine where
+                you finish. We create for the dreamers, the grinders, the ones who see
+                their reflection in our brand's journey.
               </p>
               <p>
-                Made in Long Eaton, England and crafted from our luxurious long
-                staple Supima cotton for unparalleled softness, comfort and
-                durability, the Sunspel T-shirt has a classic fit and only the
-                most essential details.{' '}
+                Our mission goes beyond clothing. We're building a community of people who
+                refuse to be defined by their circumstances. Each limited drop is a
+                statement — quality over quantity, intention over impulse.
               </p>
               <p>
-                With over 100 years spent perfecting fabric, fit and style, the
-                Sunspel Classic T-shirt is recognised as the finest in the
-                world.
+                When you wear BROKE SAINTS, you're not just wearing a brand. You're
+                carrying a testimony. You're part of a movement that believes in
+                transformation through persistence.
               </p>
             </div>
           </div>
         </Container>
 
         <div className={styles.imageContainer}>
-          <img alt={'shirt backwards'} src={toOptimizedImage('/about3.png')}></img>
+          <img alt={'BROKE SAINTS lifestyle'} src={toOptimizedImage('/about3.png')}></img>
         </div>
       </div>
     </Layout>
